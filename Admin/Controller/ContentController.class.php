@@ -11,16 +11,19 @@
  * @license       Apache License (http://www.apache.org/licenses/LICENSE-2.0)
  */
 
-\Import::load(CORE_PATH . 'Library/Category' . EXT);
-\Import::load(CORE_PATH . 'Library/Upload/Upload' . EXT);
-
 use Think\Library as Library;
+use \Redirect;
+use \Import;
+use \Controller;
+
+Import::load(CORE_PATH . 'Library/Category' . EXT);
+Import::load(CORE_PATH . 'Library/Upload/Upload' . EXT);
 
 /**
  * ContentExtendAction
  * 后台开发CURD及页面控制器
  */
-class ContentController extends \Controller {
+class ContentController extends Controller {
 
 	// Model Config
 	/**
